@@ -2,4 +2,25 @@
 
 require_relative '../lib/move.rb'
 
+board = Array.new(9, " ")
+
 # Code your CLI Here
+
+#SHOW BOARD & ASK WHERE TO GO
+puts "Welcome to Tic Tac Toe!"
+puts "Which space you wanna make your move in? (1-9)"
+
+#TAKE INPUT AND GREAT INTEGER TO POPULATE BOARD ARRAY
+input = gets.strip
+index = input_to_index (input)
+
+#USE TURN INFO TO UPDATE ARRAY
+board
+move(board, index)
+
+#DISPLAY BOARD AGAIN
+display_board (board)
+
+
+
+
