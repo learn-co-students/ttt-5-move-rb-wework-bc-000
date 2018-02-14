@@ -4,6 +4,8 @@ require_relative '../lib/move.rb'
 
 # Code your CLI Here
 
+board = [" "," "," "," "," "," "," "," "," "]
+
 puts "Welcome to Tic Tac Toe!"
 
 puts "Where do you want to go?"
@@ -11,6 +13,9 @@ input = gets.strip
 
 puts "You typed #{input}"
 
-input_to_index(board , 0 , "X")
+index = input_to_index(input)
 
-display_board()
+move(board, index, value="X")
+display_board(board)
+
+#when calling methods, have to include the parameters 
