@@ -7,3 +7,10 @@ def display_board(board)
 end
 
 # code your input_to_index and move method here!
+
+display_board
+
+puts "Where do you want to go?"
+input = gets 
+
+puts "You typed #{input}"
