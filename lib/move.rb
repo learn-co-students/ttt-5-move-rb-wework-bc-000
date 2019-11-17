@@ -1,3 +1,5 @@
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " ", ]
+
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -7,3 +9,19 @@ def display_board(board)
 end
 
 # code your input_to_index and move method here!
+puts "Welcome To Tic Tac Toe!"
+def input_to_index(input)
+  input.to_i-1
+end
+
+def move(board, index, token = "X")
+  board[index] = token
+end
+
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " ", ]
+
+move(board, 0, "X")
+move(board, 4, "O")
+
+display_board(board)
+
